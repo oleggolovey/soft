@@ -80,35 +80,6 @@ const checkFunc = () => {
 
 checkFunc();
 
-// if (six.classList.contains("active") && twenty.classList.contains("active")) {
-//   result.innerHTML = `8500 <span>руб./мес.</span>`;
-// } else if (
-//   six.classList.contains("active") &&
-//   thirty.classList.contains("active")
-// ) {
-//   result.innerHTML = `16 000 <span>руб./мес.</span>`;
-// } else if (
-//   six.classList.contains("active") &&
-//   sixty.classList.contains("active")
-// ) {
-//   result.innerHTML = `25 000 <span>руб./мес.</span>`;
-// } else if (
-//   twelve.classList.contains("active") &&
-//   twenty.classList.contains("active")
-// ) {
-//   result.innerHTML = `7225 <span>руб./мес.</span>`;
-// } else if (
-//   twelve.classList.contains("active") &&
-//   thirty.classList.contains("active")
-// ) {
-//   result.innerHTML = `13 000 <span>руб./мес.</span>`;
-// } else if (
-//   twelve.classList.contains("active") &&
-//   sixty.classList.contains("active")
-// ) {
-//   result.innerHTML = `21 250 <span>руб./мес.</span>`;
-// }
-
 // Sticky heading
 
 const head = document.getElementById("heading");
