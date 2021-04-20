@@ -95,7 +95,7 @@ window.onscroll = function () {
   // Fixed button
   if (window.pageYOffset > 3200) {
     fixedBtn.style.display = "flex";
-  } else {
-    fixedBtn.style.display = "none";
-  }
+  } //else {
+    //fixedBtn.style.display = "none";
+  //}
 };
