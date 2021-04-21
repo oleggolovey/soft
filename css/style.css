@@ -572,3 +572,11 @@ button {
 .footer-bottom {
   margin-top: 30px;
 }
+
+.up {
+  transition: all 0.3s ease;
+}
+
+.up:hover {
+  transform: translateX(10px);
+}
