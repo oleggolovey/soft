@@ -573,10 +573,12 @@ button {
   margin-top: 30px;
 }
 
-.up {
+.up-arr {
   transition: all 0.3s ease;
+  display: block;
+  height: 51px;
 }
 
-.up:hover {
+.up-arr:hover {
   transform: translateX(10px);
 }
