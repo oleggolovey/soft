@@ -84,6 +84,7 @@ checkFunc();
 
 const head = document.getElementById("heading");
 const fixedBtn = document.getElementById("fixed");
+const priceSec = document.getElementById("tariffs");
 
 window.onscroll = function () {
   if (window.pageYOffset > 1000) {
@@ -93,9 +94,9 @@ window.onscroll = function () {
   }
 
   // Fixed button
-  if (window.pageYOffset > 3200) {
+  if (window.pageYOffset > priceSec.offsetTop) {
     fixedBtn.style.display = "flex";
   } //else {
-    //fixedBtn.style.display = "none";
+  //fixedBtn.style.display = "none";
   //}
 };
