@@ -9,6 +9,20 @@
     <title>PlanR</title>
   </head>
   <body>
+    <div id="wrapper-modal">
+      <div id="overlay"></div>
+      <form action="mail.php" method="POST" id="form">
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Site Name" />
+        <input type="hidden" name="admin_email" value="admin@mail.com" />
+        <input type="hidden" name="form_subject" value="Form Subject" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <button type="submit"></button>
+        <!-- END Hidden Required Fields -->
+      </form>
+    </div>
     <header class="header" id="header">
       <div class="heading" id="heading">
         <div class="container">
