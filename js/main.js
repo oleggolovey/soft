@@ -135,7 +135,7 @@ window.onscroll = function () {
 // jQuery form sending
 $(document).ready(function () {
   //E-mail Ajax Send
-  $("#form").submit(function () {
+  $("form").submit(function () {
     //Change
     var th = $(this);
     $.ajax({
