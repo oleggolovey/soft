@@ -1,3 +1,34 @@
+// Modal
+
+const btn = document.querySelectorAll("#btn"),
+  demoBtn = document.getElementById("demo-btn"),
+  modal = document.getElementById("wrapper-modal"),
+  overlay = document.getElementById("overlay"),
+  demo = document.getElementById("demo-wrap");
+
+const form = document.getElementById("form");
+
+const sendBtn = document.getElementById("form-btn");
+
+const showModal = () => {
+  modal.classList.add("active");
+  form.style.display = "flex";
+};
+const closeModal = () => {
+  modal.classList.remove("active");
+  demo.style.display = "none";
+};
+btn.forEach((item) => {
+  item.addEventListener("click", showModal);
+});
+overlay.addEventListener("click", closeModal);
+
+demoBtn.addEventListener("click", () => {
+  modal.classList.add("active");
+  demo.style.display = "flex";
+  form.style.display = "none";
+});
+
 // Animated scroll
 const anchors = document.querySelectorAll('a[href*="#"]');
 

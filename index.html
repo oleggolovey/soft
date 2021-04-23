@@ -11,16 +11,42 @@
   <body>
     <div id="wrapper-modal">
       <div id="overlay"></div>
-      <form action="mail.php" method="POST" id="form">
+
+      <div class="sent form" id="sent">
+        <h3 class="sent-title">Ваша форма успешно отправлена</h3>
+        <img src="img/check.svg" alt="" class="sent-pic" />
+      </div>
+
+      <form action="" method="" id="form" class="form">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="Site Name" />
         <input type="hidden" name="admin_email" value="admin@mail.com" />
         <input type="hidden" name="form_subject" value="Form Subject" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <button type="submit"></button>
         <!-- END Hidden Required Fields -->
+
+        <h2 class="form__title">Мы свяжемся с вами в ближайшее время</h2>
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Введите имя"
+          required
+          name="name"
+        />
+        <input
+          type="tel"
+          class="form__input"
+          placeholder="Введите телефон"
+          required
+          name="phone"
+        />
+        <input
+          type="mail"
+          class="form__input"
+          placeholder="Введите почту"
+          required
+          name="email"
+        />
+        <button id="form-btn" class="form__btn">Заказать звонок</button>
       </form>
     </div>
     <header class="header" id="header">
@@ -49,7 +75,7 @@
                 <img src="img/phone.svg" alt="" />
                 +7 980 544-79-33
               </a>
-              <button class="btn" id="call">Заказать звонок</button>
+              <button class="btn" id="btn">Заказать звонок</button>
             </a>
           </div>
         </div>
@@ -243,7 +269,7 @@
           <div class="price">
             <h4 class="price__title">Стоимость использования программы</h4>
             <div id="result" class="result"></div>
-            <button class="cost__btn btn">Заказать этот тариф</button>
+            <button id="btn" class="cost__btn btn">Заказать этот тариф</button>
             <div class="return">
               <p class="return__txt">
                 Не понравилась <span>наша программа</span>
@@ -257,9 +283,36 @@
       </div>
     </section>
     <section class="demo" id="demo">
+      <div id="demo-wrap" class="form">
+        <div class="demo-wrap__info">
+          <p class="demo-wrap__text">
+            Чтобы воспользоваться общедоступной демонстрационной версией PlanR
+            перейдите на сайт
+            <a href="https://demo.rost.g00.link/login" target="_blank"
+              >demo.rost.g00.link</a
+            >
+            и авторизуйтесь со следующими данными:
+          </p>
+          <ul class="demo-wrap__list">
+            <li class="demo-wrap__item">Логин: admin</li>
+            <li class="demo-wrap__item">Пароль: jau9Cu112v</li>
+          </ul>
+          <a
+            href="https://demo.rost.g00.link/login"
+            target="_blank"
+            class="demo-wrap__link"
+            >Перейти на сайт</a
+          >
+        </div>
+        <div class="demo-wrap__img">
+          <img src="img/demo-power.svg" alt="" />
+        </div>
+      </div>
       <div class="container">
         <h2 class="sec-title">Демонстрационная версия</h2>
-        <button class="cost__btn demo_btn btn">Получить демоверсию</button>
+        <button id="demo-btn" class="cost__btn demo_btn btn">
+          Получить демоверсию
+        </button>
         <img class="demo-img" src="img/demo.png" alt="PlanR" />
       </div>
     </section>
@@ -295,7 +348,7 @@
                   </li>
                 </ul>
               </nav>
-              <button class="btn btn_f" id="call">Заказать звонок</button>
+              <button class="btn btn_f" id="btn">Заказать звонок</button>
             </div>
             <div class="footer-bottom">
               <img src="img/line-footer.png" alt="" />
