@@ -133,7 +133,7 @@ window.onscroll = function () {
 };
 
 // jQuery form sending
-$(document).ready(function () {
+$(function () {
   //E-mail Ajax Send
   $("form").submit(function () {
     //Change
@@ -143,11 +143,19 @@ $(document).ready(function () {
       url: "mail.php", //Change
       data: th.serialize(),
     }).done(function () {
-      alert("Thank you!");
+      $(".form__input, .form__btn, .form__title")
+        .removeClass("d-block")
+        .addClass("d-none");
+      $(".sent").addClass("active");
       setTimeout(function () {
+        $("#wrapper-modal").removeClass("active");
+        $(".sent").removeClass("active");
+        $(".form__input, .form__btn, .form__title")
+          .removeClass("d-none")
+          .addClass("d-block");
         // Done Functions
         th.trigger("reset");
-      }, 1000);
+      }, 2500);
     });
     return false;
   });
