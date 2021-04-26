@@ -1,3 +1,34 @@
+// Modal
+
+const btn = document.querySelectorAll("#btn"),
+  demoBtn = document.getElementById("demo-btn"),
+  modal = document.getElementById("wrapper-modal"),
+  overlay = document.getElementById("overlay"),
+  demo = document.getElementById("demo-wrap");
+
+const form = document.getElementById("form");
+
+const sendBtn = document.getElementById("form-btn");
+
+const showModal = () => {
+  modal.classList.add("active");
+  form.style.display = "flex";
+};
+const closeModal = () => {
+  modal.classList.remove("active");
+  demo.style.display = "none";
+};
+btn.forEach((item) => {
+  item.addEventListener("click", showModal);
+});
+overlay.addEventListener("click", closeModal);
+
+demoBtn.addEventListener("click", () => {
+  modal.classList.add("active");
+  demo.style.display = "flex";
+  form.style.display = "none";
+});
+
 // Animated scroll
 const anchors = document.querySelectorAll('a[href*="#"]');
 
@@ -100,3 +131,32 @@ window.onscroll = function () {
   //fixedBtn.style.display = "none";
   //}
 };
+
+// jQuery form sending
+$(function () {
+  //E-mail Ajax Send
+  $("form").submit(function () {
+    //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize(),
+    }).done(function () {
+      $(".form__input, .form__btn, .form__title")
+        .removeClass("d-block")
+        .addClass("d-none");
+      $(".sent").addClass("active");
+      setTimeout(function () {
+        $("#wrapper-modal").removeClass("active");
+        $(".sent").removeClass("active");
+        $(".form__input, .form__btn, .form__title")
+          .removeClass("d-none")
+          .addClass("d-block");
+        // Done Functions
+        th.trigger("reset");
+      }, 2000);
+    });
+    return false;
+  });
+});
