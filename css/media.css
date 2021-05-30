@@ -159,6 +159,63 @@
 /* 320-576px */
 @media screen and (max-width: 576px) {
   .container {
-    max-width: auto;
+    max-width: none;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cost-box,
+  .cost__head {
+    width: 300px;
+  }
+  .cost-box {
+    margin: 0 auto;
+  }
+  .sec-title {
+    font-size: 28px;
+  }
+  .left__title {
+    font-size: 35px;
+  }
+  .footer-left {
+    flex-direction: column;
+  }
+  .rights {
+    font-size: 12px;
+  }
+  .ask {
+    padding: 0;
+    margin-top: 30px;
+    background-position: center;
+  }
+  .sec-title::after {
+    top: 75px;
+  }
+  .logo_f {
+    margin-bottom: 30px;
+  }
+  .demo-img {
+    top: 0;
+  }
+  .form__input {
+    width: auto;
+  }
+  .form__title {
+    font-size: 25px;
+  }
+  .form__btn {
+    width: 235px;
+  }
+  .form {
+    padding: 20px;
+  }
+  .overlayMenu ul li a {
+    font-size: 20px;
+  }
+  #demo-wrap {
+    width: auto;
+  }
+  .demo-wrap__img {
+    display: none;
   }
 }
