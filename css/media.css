@@ -179,6 +179,10 @@
   }
   .footer-left {
     flex-direction: column;
+    align-items: center;
+  }
+  .nav_f {
+    margin-left: 0;
   }
   .rights {
     font-size: 12px;
