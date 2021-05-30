@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <title>PlanR</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
         <img src="img/check.svg" alt="" class="sent-pic" />
       </div>
 
-      <form action="" method="" id="form" class="form">
+      <form action="" method="" id="form" class="form form_phone">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="PlanR" />
         <input type="hidden" name="admin_email" value="office@planr.cloud" />
@@ -55,7 +56,37 @@
           <div class="head d-flex">
             <a href="#header" class="logo">
               <img src="img/logo.png" alt="PlanR" />
-              <nav class="nav">
+              <!-- Burger-menu -->
+              <div class="burg-wrapper">
+                <div class="navBurger" role="navigation" id="navToggle"></div>
+
+                <div class="overlay">
+                  <nav class="overlayMenu">
+                    <ul role="menu">
+                      <li class="menu__item">
+                        <a href="#header" class="menu__link">Главная</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#power" class="menu__link">Возможности</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#tariffs" class="menu__link">Тарифы</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="#func" class="menu__link">Обзор функционала</a>
+                      </li>
+                      <li class="menu__item">
+                        <a href="tel:79805447933" class="phone phone_burg">
+                          <img src="img/phone.svg" alt="" />
+                          +7 980 544-79-33
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- End Burger-menu -->
+              <nav class="nav nav_head">
                 <ul class="menu">
                   <li class="menu__item">
                     <a href="#header" class="menu__link"> Главная </a>
@@ -75,7 +106,7 @@
                 <img src="img/phone.svg" alt="" />
                 +7 980 544-79-33
               </a>
-              <button class="btn" id="btn">Заказать звонок</button>
+              <button class="btn btn_head" id="btn">Заказать звонок</button>
             </a>
           </div>
         </div>
