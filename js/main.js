@@ -159,4 +159,18 @@ $(function () {
     });
     return false;
   });
+
+  //Burger
+
+  $("#navToggle").click(function () {
+    $(this).toggleClass("active");
+    $(".overlay").toggleClass("open");
+    $("body").toggleClass("locked");
+  });
+
+  $(".overlay a").click(function () {
+    $("#navToggle").toggleClass("active");
+    $(".overlay").toggleClass("open");
+    $("body").toggleClass("locked");
+  });
 });
