@@ -59,7 +59,7 @@
     background-position: unset;
   }
   .demo-img {
-    max-width: 80%;
+    top: 160px;
   }
 }
 
@@ -105,6 +105,9 @@
   section {
     padding: 100px 0;
   }
+  .tariffs {
+    padding-top: 100px;
+  }
   .head-wrap {
     flex-direction: column;
   }
@@ -133,6 +136,9 @@
   }
   section {
     padding: 80px 0;
+  }
+  .tariffs {
+    padding-top: 80px;
   }
   .form {
     width: 500px;
@@ -208,9 +214,6 @@
   .logo_f {
     margin-bottom: 30px;
   }
-  .demo-img {
-    top: 40px;
-  }
   .form__input {
     width: auto;
   }
@@ -221,7 +224,8 @@
     width: 235px;
   }
   .form {
-    padding: 20px;
+    padding: 50px;
+    width: auto;
   }
   .overlayMenu ul li a {
     font-size: 20px;
@@ -231,6 +235,9 @@
   }
   .demo-wrap__img {
     display: none;
+  }
+  .demo_btn {
+    margin: 93px auto 0;
   }
   .header {
     padding-bottom: 80px;

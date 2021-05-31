@@ -518,6 +518,7 @@ video [poster] {
 
 .tariffs {
   background: rgb(61 61 61 / 4%);
+  padding-bottom: 0;
 }
 
 .cost-box {
@@ -674,6 +675,7 @@ video [poster] {
   background: rgb(61 61 61 / 4%);
   padding-top: 0;
   position: relative;
+  padding-top: 120px;
 }
 
 .demo_btn {
@@ -685,7 +687,7 @@ video [poster] {
   position: absolute;
   opacity: 0.2;
   z-index: -1;
-  top: -70px;
+  top: 70px;
 }
 
 /* Func */
