@@ -164,7 +164,7 @@ button {
   background: #3b6e8c url(../img/first-bg.jpg) no-repeat center top / cover;
   padding-top: 38px;
   color: #fff;
-  padding-bottom: 175px;
+  padding-bottom: 150px;
 }
 
 .head {
@@ -409,6 +409,10 @@ button {
   align-items: center;
 }
 
+.offer {
+  margin-top: 150px;
+}
+
 .left {
   max-width: 560px;
 }
@@ -447,14 +451,18 @@ button {
   width: 50%;
 }
 
-.left {
-  margin-top: 235px;
-}
-
 .right {
   margin-left: auto;
-  height: 470px;
-  margin-top: 155px;
+  display: flex;
+  align-items: center;
+}
+
+video {
+  max-width: 100%;
+}
+
+video [poster] {
+  object-fit: cover;
 }
 
 /* Power */
@@ -690,9 +698,13 @@ button {
   display: none;
 }
 
-.func-video-img {
-  margin: 0 auto;
-  display: block;
+.func-video {
+  display: flex;
+  justify-content: center;
+}
+
+.video_sec {
+  max-width: 75%;
 }
 
 /* Footer */
