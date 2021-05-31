@@ -87,6 +87,7 @@
   .cost-box > div:nth-last-of-type(2) {
     margin-top: 60px;
   }
+
   .right {
     margin-left: auto;
     margin-top: 0;
@@ -241,5 +242,15 @@
   }
   .header {
     padding-bottom: 80px;
+  }
+  .cost-box > div:nth-last-of-type(2) {
+    margin-top: -95px;
+    min-height: 250px;
+  }
+  .cost__head {
+    margin-bottom: 20px;
+  }
+  .months {
+    margin-bottom: 20px;
   }
 }
